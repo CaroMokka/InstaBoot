@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/584f316222.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="row bg-light d-flex justify-content-between">
+            <div class="col-4 d-flex align-items-center">
+                <i class="fab fa-instagram text-secondary mr-2 h1"></i>
+                <h3 class="text-secondary"><strong>Instagram</strong></h3>
+            </div>
+            <div class="col-4 p-0 d-flex justify-content-end align-items-center">
+                <div class="button-create">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                        Create a new post
+                    </button>
+                    <!-- Start Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="input-group">
+
+                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                    </div>
+
+                                </div>
+                                <div class="modal-body">
+                                    <i class="btn btn-outline-secondary fas fa-camera"></i>
+                                    <i class="btn btn-outline-secondary fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-secondary"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Modal -->
+                </div>
+                <div class="setting">
+                    <div class="dropdown text-secondary">
+                        <a class="btn btn-transparent dropdown-toggle text-secondary" href="#" role="button"
+                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-cog text-secondary display-5"></i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <hr>
+                            <a class="dropdown-item" href="#">Log Out</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+        <!-- Start Gallery -->
+        <div class="row d-flex justify-content-center mt-4">
+
+            <div class="col-12 bg-light p-0 d-flex flex-column align-items-center">
+                <!-- Nav pills -->
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link bg-transparent active" data-toggle="pill" href="#home"><i
+                                class="fas fa-th text-secondary"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-transparent" data-toggle="pill" href="#menu1"><i
+                                class="fas fa-square text-secondary"></i></a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active p-0"><br>
+                        <div class="gallery w-100 d-flex flex-column">
+                            <div class="row">
+                                <div class="col-4 p-1"><img src="http://lorempixel.com/300/300" class="img-fluid"
+                                        alt=""></div>
+                                <div class="col-4 p-1"><img src="http://lorempixel.com/g/300/300" class="img-fluid"
+                                        alt=""></div>
+                                <div class="col-4 p-1"><img src="http://lorempixel.com/300/300/sports" class="img-fluid"
+                                        alt=""></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 p-1"><img src="http://lorempixel.com/300/300/sports" class="img-fluid"
+                                        alt=""></div>
+                                <div class="col-4 p-1"><img src="http://lorempixel.com/g/300/300" class="img-fluid"
+                                        alt=""></div>
+                                <div class="col-4 p-1"><img src="http://lorempixel.com/300/300/sports" class="img-fluid"
+                                        alt=""></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 p-1"><img src="http://lorempixel.com/g/300/300" class="img-fluid"
+                                        alt=""></div>
+                                <div class="col-4 p-1"><img src="http://lorempixel.com/300/300" class="img-fluid"
+                                        alt=""></div>
+                                <div class="col-4 p-1"><img src="http://lorempixel.com/g/300/300" class="img-fluid"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu1" class="container tab-pane fade"><br>
+                        <!-- Cards -->
+                        <!-- Card 1 -->
+                        <div class="card border-0 rounded-0 mb-4" style="width: 40rem;">
+                            <div class="head-card d-flex justify-content-between align-items-center">
+                                <h4 class="m-2 text-dark">My First Photo</h4>
+                                <h5 class="m-2 text-secondary">12/14</h5>
+                            </div>
+
+                            <img class="card-img-top rounded-0" src="http://lorempixel.com/300/300"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <span class="text-dark">23 Likes</span>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                                    tempore error ipsum fuga tenetur debitis doloribus, nostrum ex modi cupiditate eaque
+                                    pariatur laborum? A, ducimus corrupti? Autem incidunt illum minus?</p>
+                            </div>
+                            <div class="footer-card d-flex justify-content-between align-items-center text-secondary">
+                                <i class="far fa-heart p-2 ml-2"></i>
+                                <p class="p-2 mb-0 mr-auto">Comment...</p>
+                                <i class="fas fa-ellipsis-v p-2 mr-2"></i>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card border-0 rounded-0 mb-4" style="width: 40rem;">
+                            <div class="head-card d-flex justify-content-between align-items-center">
+                                <h4 class="m-2 text-dark">My First Photo</h4>
+                                <h5 class="m-2 text-secondary">12/14</h5>
+                            </div>
+
+                            <img class="card-img-top rounded-0" src="http://lorempixel.com/g/300/300"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <span class="text-dark">23 Likes</span>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab et
+                                    pariatur fugit tempore sequi quia modi atque reprehenderit! Natus consectetur,
+                                    corporis quibusdam porro illo ad. Maiores quia culpa perspiciatis libero.</p>
+                            </div>
+                            <div class="footer-card d-flex justify-content-between align-items-center text-secondary">
+                                <i class="far fa-heart p-2 ml-2"></i>
+                                <p class="p-2 mb-0 mr-auto">Comment...</p>
+                                <i class="fas fa-ellipsis-v p-2 mr-2"></i>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card border-0 rounded-0 mb-4" style="width: 40rem;">
+                            <div class="head-card d-flex justify-content-between align-items-center">
+                                <h4 class="m-2 text-dark">My First Photo</h4>
+                                <h5 class="m-2 text-secondary">12/14</h5>
+                            </div>
+
+                            <img class="card-img-top rounded-0" src="http://lorempixel.com/300/300/sports"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <span class="text-dark">23 Likes</span>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
+                                    possimus itaque beatae esse, quod blanditiis ratione provident accusantium quis
+                                    quaerat molestiae qui rem. Nobis debitis repudiandae animi asperiores alias impedit?
+                                </p>
+                            </div>
+                            <div class="footer-card d-flex justify-content-between align-items-center text-secondary">
+                                <i class="far fa-heart p-2 ml-2"></i>
+                                <p class="p-2 mb-0 mr-auto">Comment...</p>
+                                <i class="fas fa-ellipsis-v p-2 mr-2"></i>
+                            </div>
+                        </div>
+                        <!-- Card 4-->
+                        <div class="card border-0 rounded-0 mb-4" style="width: 40rem;">
+                            <div class="head-card d-flex justify-content-between align-items-center">
+                                <h4 class="m-2 text-dark">My First Photo</h4>
+                                <h5 class="m-2 text-secondary">12/14</h5>
+                            </div>
+
+                            <img class="card-img-top rounded-0" src="http://lorempixel.com/300/300"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <span class="text-dark">23 Likes</span>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                    eos aliquam eveniet itaque quaerat ab perferendis sed quam accusantium fugiat
+                                    adipisci autem, harum omnis temporibus. Suscipit reprehenderit velit non eum!</p>
+                            </div>
+                            <div class="footer-card d-flex justify-content-between align-items-center text-secondary">
+                                <i class="far fa-heart p-2 ml-2"></i>
+                                <p class="p-2 mb-0 mr-auto">Comment...</p>
+                                <i class="fas fa-ellipsis-v p-2 mr-2"></i>
+                            </div>
+                        </div>
+                        <!-- End Cards -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
